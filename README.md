@@ -1,2 +1,2 @@
 # PortFolioFrontEnd
-repositorio para el FrontEnd
+repositorio para el FrontEnd en desarrollo
