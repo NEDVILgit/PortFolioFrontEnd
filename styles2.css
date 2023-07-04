@@ -5,3 +5,136 @@ body{
     font-family: "Open Sans", sans-serif;
     color: #272829;
 }
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+#header {
+    position: fixed; /* especifica el tipo de posicionamiento utilizado 
+                      estático(static), relativo(relative), absoluto(absolute), 
+                      fijo(fixed) o fijo(sticky). */
+    top: 0; /*  afecta la posición vertical de un elemento posicionado */
+    left: 0;
+    bottom: 0; /* afecta la posición vertical de un elemento posicionado */
+    z-index: 9997; /* especifica el orden de capa de un elemento. */
+    transition: all 0.5s; /* propiedad es una propiedad abreviada para 
+                                transition-property
+                                transition-duration
+                                transition-timing-function
+                                transition-delay*/
+    padding: 15px; /* es el espacio entre su contenido y su borde para los cuatro lados.*/
+    overflow-y: auto; /*agrega una barra de desplazamiento o se muestra el contenido desbordado */
+  }
+
+  /*Cambie el color de fondo del elemento <header> a "blanco"
+  lo mueve a la izquierda a -300 px y cambia el color del borde derecho 
+  cuando la ventana del navegador tenga 991 px de ancho o menos:*/
+
+   @media (max-width: 991px) {
+    #header {
+      width: 300px; /* establece el ancho de un elemento. */
+      background: #fff; /* Establecer el color de fondo */
+      border-right: 1px solid #e6e9ec; /* Especifica el ancho del borde derecho y el color */
+      left: -300px; /* posiciona a -300 px del borde izquierdo del header */
+    }
+  }
+  
+  @media (min-width: 991px) {
+    #main {
+      margin-left: 100px; /* establece el margen izquierdo de un elemento. */
+    }
+  }
+
+  /*--------------------------------------------------------------
+# Navigation Menu
+--------------------------------------------------------------*/
+/**
+* Desktop Navigation 
+**/
+
+.nav-menu {
+    padding: 0;
+    display: block; /* especifica el comportamiento de visualización 
+                    (el tipo de cuadro de representación) de un elemento.*/
+  }
+  
+  .nav-menu * {
+    margin: 0;
+    padding: 0;
+    list-style: none; /* especifica una lista (none) sin el simbolo*/
+  }
+  
+  .nav-menu>ul>li {
+    position: relative;
+    white-space: nowrap; /* especifica cómo se maneja el espacio en blanco */
+  }
+  .nav-menu a,
+  .nav-menu a:focus { /* focus: seleccionar el elemento que tiene el foco.*/
+    display: flex; /* muestra un elemento como un contenedor flexible */
+    align-items: center;
+    color: #45505b;
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    transition: 0.3s;
+    font-size: 15px;
+    border-radius: 50px;
+    background: #f2f3f5;
+    height: 56px; /*especifica el alto */
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+  }
+  
+  .nav-menu a i,
+  .nav-menu a:focus i {
+    font-size: 20px;
+  }
+  
+  .nav-menu a span,
+  .nav-menu a:focus span {
+    padding: 0 5px 0 7px;
+    color: #45505b;
+  }
+  
+  /*reduce el ancho del elemento <a> y el que esta en foco
+   para mostrar iconos y la forma como un circulo
+   desactivando el elemento <spam>
+  cuando la ventana del navegador sea mayor o igual a 992 px de ancho */
+  @media (min-width: 992px) {
+    
+    .nav-menu a,
+    .nav-menu a:focus {
+      width: 56px;
+    }
+    
+    .nav-menu a span,
+    .nav-menu a:focus span {
+      display: none;
+      color: #fff;
+    }
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu .active,
+  .nav-menu .active:focus,
+  .nav-menu li:hover>a {
+    color: #fff;
+    background: #0563bb;
+  }
+  
+  .nav-menu a:hover span,
+  .nav-menu .active span,
+  .nav-menu .active:focus span,
+  .nav-menu li:hover>a span {
+    color: #fff;
+  }
+  
+  .nav-menu a:hover,
+  .nav-menu li:hover>a {
+    width: 100%;
+    color: #fff;
+  }
+    
+  .nav-menu a:hover span,
+  .nav-menu li:hover>a span {
+    display: block;
+  }
