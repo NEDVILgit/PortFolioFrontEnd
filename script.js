@@ -1,7 +1,7 @@
-/* Funcion que 
-cambia el estilo del input a visible
-toma el valor del texto del parrafo con id "texto-acercade"
-lo muestra en consola */
+// Funcion que 
+// cambia el estilo del input a visible
+// toma el valor del texto del parrafo con id "texto-acercade"
+// lo muestra en consola
 function cambiar_parrafo() {
     document.getElementById("edit-acercade").style.display="block";
     let texto = document.getElementById("text-acercade").innerText;
@@ -40,4 +40,3 @@ function showfile(input){
         console.log(reader.error);
     };
 }
-/**/
