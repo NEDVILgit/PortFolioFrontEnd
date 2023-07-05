@@ -109,8 +109,8 @@ h6 {
 --------------------------------------------------------------*/
 #header {
     position: fixed; /* especifica el tipo de posicionamiento utilizado 
-                      estático(static), relativo(relative), absoluto(absolute), 
-                      fijo(fixed) o fijo(sticky). */
+                        estático(static), relativo(relative), absoluto(absolute), 
+                        fijo(fixed) o fijo(sticky). */
     top: 0; /*  afecta la posición vertical de un elemento posicionado */
     left: 0;
     bottom: 0; /* afecta la posición vertical de un elemento posicionado */
@@ -280,7 +280,7 @@ h6 {
 #hero {
   width: 100%;
   height: 100vh;
-  background: url("../img/hero-bg.jpg") top right no-repeat;
+  background: url("../img/hero-bg-2.jpg") top right no-repeat;
   background-size: cover;
   position: relative;
 }
